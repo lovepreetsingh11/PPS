@@ -1,0 +1,544 @@
+<div id="doc" class="markdown-body container-fluid"><p>PPS file<br>
+Name:lovepreet Singh<br>
+Class:CSE(A2)<br>
+Roll no:1915047</p><p>1.Program  to print Hello  buddy engineers</p><p>#include &lt;stdio.h&gt;<br>
+int main()<br>
+{<br>
+printf("lHello buddy engineers! ");<br>
+return 0;<br>
+}</p><p>Output</p><p>Hello buddy engineers !</p><p>Program to print your  address using puts</p><p>#include&lt;stdio.h&gt;<br>
+int main()<br>
+{<br>
+puts("My  address ");<br>
+puts(“House no 166,Sherpur khurd near noori masjid \n Ludhiana”);<br>
+return 0;<br>
+}</p><p>Output</p><p>My address:<br>
+House no 166,Sherpur Khurd near noori masjid<br>
+Ludhiana</p><p>3.Program(Sum of  two  number)</p><p>#include&lt;stdio.h&gt;<br>
+int main() {<br>
+int a, b, sum;<br>
+{<br>
+printf("\nEnter two no: “);<br>
+scanf(”%d %d", &amp;a, &amp;b);<br>
+sum = a + b;<br>
+printf(“Sum : %d”, sum);<br>
+return(0)<br>
+}</p><p>4.Program to find the number is even  or odd</p><p>#include&lt;stdio.h&gt;</p><p>int main()<br>
+{<br>
+int n;<br>
+printf(“Enter the no : “);<br>
+scanf(”%d”,&amp;n);<br>
+if(n%2==0)<br>
+printf(" no is even");<br>
+else<br>
+printf(“no is odd”);<br>
+return 0;<br>
+}<br>
+5.Program to print  table  of 5</p><p>#include &lt;stdio.h&gt;</p><p>int main()<br>
+{<br>
+int i, num;</p><pre><code>/* Input a number to print table */
+printf("Enter number to print table: ");
+scanf("%d", &amp;num);
+
+for(i=1; i&lt;=10; i++)
+{
+    printf("%d * %d = %d\n", num, i, (num*i));
+}
+
+return 0;
+</code></pre><p>}</p><p>6.Program to convert temperature to  ferenhiet</p><p>#include&lt;stdio.h&gt;</p><p>int main()<br>
+{<br>
+float f,c;<br>
+printf(" Enter degree of farenhiet:  ");</p><p>scanf("%f",&amp;f);<br>
+c=(f-32)*5/9;<br>
+printf(“The coverted value of  %f farenhiet is : %f\n”,f,c);<br>
+return 0;<br>
+}</p><p>7.Program  to reverse a number</p><p>#include&lt;stdio.h&gt;</p><p>int main()<br>
+{<br>
+int n,ans=0,r;<br>
+printf(“Enter the no : “);<br>
+scanf(”%d”,&amp;n);<br>
+while(n&gt;0)<br>
+{<br>
+r=n%10;<br>
+ans=ans*10+r;<br>
+n=n/10;<br>
+}<br>
+printf(“Reverse of the given no is : %d\n”,ans);<br>
+return 0;<br>
+}</p><p>8.Program to swapping of  two  numbers without  using  third  variable</p><p>#include&lt;stdio.h&gt;<br>
+int main()<br>
+{<br>
+int a,b;<br>
+a=1;<br>
+b=2;<br>
+print (“Enter two integers:\n”);<br>
+scanf("%d,%d",&amp;a,&amp;b);<br>
+a=a+b;<br>
+b=a-b;<br>
+a=a-b;<br>
+printf(“Swapping value of a is %d”,a);<br>
+printf(“Swapping value of b is %d”,b);<br>
+return 0;<br>
+}</p><p>9.Program (factorial)</p><p>#include&lt;stdio.h&gt;</p><p>int main()<br>
+{<br>
+int i,ans=1,n;<br>
+printf(“Enter the no:  “);<br>
+scanf(”%d”,&amp;n);<br>
+for(i=1;i&lt;=n;i++)<br>
+ans=ans*i;<br>
+printf(“factorial of given no is : %d\n”,ans);<br>
+return 0;<br>
+}</p><p>10 Program (Fibonacci)</p><p>#include&lt;stdio.h&gt;</p><p>int main()<br>
+{<br>
+int n,a=0,b=1,c,i;<br>
+printf(" Enter the  no of fibonachi terms u want to print: “);<br>
+scanf(”%d",&amp;n);<br>
+printf("%d\t%d\t",a,b);<br>
+for(i=1;i&lt;=n-2;i++)<br>
+{<br>
+c=a+b;<br>
+printf("%d\t",c);<br>
+a=b;<br>
+b=c;<br>
+}<br>
+return 0;<br>
+}</p><p>11.Program (Prime number)</p><p>#include&lt;stdio.h&gt;<br>
+int main()<br>
+{<br>
+int a,i,n;<br>
+printf(“Enter the no : “);<br>
+scanf(”%d”,&amp;n);</p><p>for(i=2;i&lt;=n;i++)<br>
+{<br>
+if(n%i<mark>0)<br>
+a++;<br>
+}<br>
+if(a</mark>1)<br>
+printf(" No is prime\n");<br>
+else<br>
+printf(“not prime\n”);</p><p>return 0;<br>
+}</p><p>12.Program (Palindrome no.)</p><p>#include&lt;stdio.h&gt;</p><p>int main()<br>
+{<br>
+int temp,n,r,ans=0;<br>
+printf(“Enter the no : " );<br>
+scanf(”%d",&amp;n);<br>
+temp=n;<br>
+while(n&gt;0)<br>
+{<br>
+r=n%10;<br>
+ans=ans*10+r;<br>
+n=n/10;<br>
+}<br>
+if(ans==temp)<br>
+printf(“it is a palindrome no\n”);<br>
+else<br>
+printf(“it is not a palindrome no\n”);<br>
+return 0;<br>
+}</p><p>13.Program(addition  of two matrices)</p><p>#include&lt;stdio.h&gt;</p><p>int main()</p><p>{ int a[3][3],b[3][3],c[3][3],i,j;</p><p>printf(“Enter the elements of matrix A : \n”);</p><p>for(i=0;i&lt;=2;i++)<br>
+{<br>
+for(j=0;j&lt;=2;j++)<br>
+scanf("%d\n",&amp;a[i][j]);<br>
+}</p><p>printf(" enter the elements of matrix B\n");</p><p>for(i=0;i&lt;=2;i++)<br>
+{<br>
+for(j=0;j&lt;=2;j++)<br>
+scanf("%d\n",&amp;b[i][j]);<br>
+}</p><p>for(i=0;i&lt;=2;i++)<br>
+{<br>
+for(j=0;j&lt;=2;j++)<br>
+c[i][j]=a[i][j]+b[i][j];<br>
+}<br>
+printf(“matix A + B = \n”);</p><p>for(i=0;i&lt;=2;i++)<br>
+{<br>
+for(j=0;j&lt;=2;j++)<br>
+printf("%d\t",c[i][j]);<br>
+printf("\n");<br>
+}<br>
+return 0;<br>
+}</p><p>14.Program(subtraction of  matrices)</p><p>#include&lt;stdio.h&gt;</p><p>int main()<br>
+{<br>
+int a[3][3],b[3][3],c[3][3],i,j;</p><p>printf(“Enter the elements of array A : \n”);</p><p>for(i=0;i&lt;3;i++)<br>
+{<br>
+for(j=0;j&lt;3;j++)<br>
+scanf("%d",&amp;a[i][j]);<br>
+}</p><p>printf(“Enter the elements of array B : \n”);</p><p>for(i=0;i&lt;3;i++)<br>
+{<br>
+for(j=0;j&lt;3;j++)<br>
+scanf("%d",&amp;b[i][j]);<br>
+}</p><p>for(i=0;i&lt;3;i++)<br>
+{<br>
+for(j=0;j&lt;3;j++)<br>
+c[i][j]=a[i][j]-b[i][j];<br>
+}</p><p>printf(“result A - B = :\n”);<br>
+for(i=0;i&lt;3;i++)<br>
+{<br>
+for(j=0;j&lt;3;j++)<br>
+printf("%d\t",c[i][j]);<br>
+printf("\n");<br>
+}<br>
+return 0;<br>
+}</p><p>15.Program(transpose of matrice)</p><p>#include&lt;stdio.h&gt;</p><p>int main()</p><p>{ int a[3][3],c[3][3],i,j;</p><p>printf(“Enter the elements of matrix A : \n”);</p><p>for(i=0;i&lt;=2;i++)<br>
+{<br>
+for(j=0;j&lt;=2;j++)<br>
+scanf("%d\n",&amp;a[i][j]);<br>
+}</p><p>for(i=0;i&lt;=2;i++)<br>
+{<br>
+for(j=0;j&lt;=2;j++)<br>
+c[j][i]=a[i][j];<br>
+}</p><p>printf(" transpose of matrix A :\n");</p><p>for(i=0;i&lt;=2;i++)<br>
+{<br>
+for(j=0;j&lt;=2;j++)<br>
+printf("%d\t",c[i][j]);<br>
+printf("\n");<br>
+}<br>
+return 0;<br>
+}</p><p>16.Program(Square of a number)</p><p>#include&lt;stdio.h&gt;<br>
+int square(int n);   // function declaration  or  function prototype<br>
+int main()<br>
+{<br>
+int ans,n;<br>
+printf(“Enter the no : “);<br>
+scanf(”%d”,&amp;n);<br>
+ans=square(n);     //function call<br>
+printf(“square of given no is : %d\n”,ans);<br>
+return 0;<br>
+}<br>
+int square(int n)  // function defination<br>
+{<br>
+n=n*n;<br>
+return n;<br>
+}</p><p>17.Program (call by  value)</p><p>#include&lt;stdio.h&gt;</p><p>void swap(int a,int b);<br>
+void swap(int a,int b)<br>
+{<br>
+int c;<br>
+c=a;<br>
+a=b;<br>
+b=c;<br>
+}</p><p>int main()<br>
+{</p><p>int a,b;<br>
+printf(“Enter two numbers :”);<br>
+scanf("%d %d",&amp;a,&amp;b);<br>
+printf("value of a and b before swapping :%d %d\n ",a,b);<br>
+swap(a,b);<br>
+printf(“value of a and b after swap :%d %d\n”,a,b);<br>
+return 0;<br>
+}</p><p>18.Program(call by reference)</p><p>#include&lt;stdio.h&gt;</p><p>void swap(int <em>a,int</em>b);<br>
+void swap(int <em>a,int</em>b)<br>
+{<br>
+int temp;<br>
+temp=*a;<br>
+*a=*b;<br>
+*b=temp;<br>
+}<br>
+int main()<br>
+{<br>
+int a,b;<br>
+printf(“Enter the two numbers :”);<br>
+scanf("%d %d",&amp;a,&amp;b);<br>
+printf(“Values of a and b before swap: %d  %d\n”,a,b);<br>
+swap(&amp;a,&amp;b);<br>
+printf(“values of a and b after swap: %d  %d\n”,a,b);<br>
+return 0;<br>
+}</p><p>19.Program(area of  circle)</p><p>#include&lt;stdio.h&gt;</p><p>int main()<br>
+{<br>
+float a,n;<br>
+printf(“Enter the magnitude of radius of circle :”);<br>
+scanf("%f",&amp;n);<br>
+a=22.0/7;<br>
+a=a<em>n</em>n;<br>
+printf(“Area of the circle is %f :”,a);<br>
+return 0;<br>
+}</p><p>20.Program(array handling)</p><p>#include&lt;stdio.h&gt;</p><p>int main()<br>
+{<br>
+int count=0;<br>
+int a[10],i,max=a[0];<br>
+float sum=0;<br>
+printf(“Enter the score of 10 students : “);<br>
+for(i=0;i&lt;10;i++)<br>
+scanf(”%d”,&amp;a[i]);<br>
+for(i=0;i&lt;10;i++)<br>
+{ if(max&lt;a[i])<br>
+max=a[i];<br>
+}<br>
+printf(“maximum score of student is %d \n”,max);<br>
+for(i=0;i&lt;10;i++)<br>
+sum=sum+a[i];<br>
+sum=sum/10;<br>
+printf(“average score of students is %f\n”,sum);</p><p>for(i=0;i&lt;10;i++)<br>
+{<br>
+if(a[i]&gt;sum)<br>
+count++;<br>
+}<br>
+printf(" no of students who score marks greater than class average are %d\n",count);<br>
+return 0;<br>
+}</p><p>21.Program (array in structure)</p><p>#include&lt;stdio.h&gt;</p><p>struct record<br>
+{<br>
+int roll_no;<br>
+char name[20];<br>
+int marks;<br>
+long contact_no;<br>
+};</p><p>int main()<br>
+{<br>
+int i;<br>
+struct record r[5];<br>
+for(i=1;i&lt;6;i++)<br>
+{<br>
+printf(“STUDENT %d \nEnter roll no,name,marks,contact no: “,i);<br>
+scanf(”%d %s %d %ld”,&amp;r[i].roll_no,&amp;r[i].name,&amp;r[i].marks,&amp;r[i].contact_no);<br>
+}<br>
+for(i=1;i&lt;6;i++)<br>
+{<br>
+printf("for student %d \n roll no :%d \n name: %s  \n marks: %d \n contact no: %ld \n\n ",i,r[i].roll_no,r[i].name,r[i].marks,r[i].contact_no);<br>
+}<br>
+return 0;<br>
+}</p><p>22.Program(array using  pointer)<br>
+#include&lt;stdio.h&gt;<br>
+int main()<br>
+{<br>
+int i,a[5];<br>
+int *p;<br>
+p=&amp;a[0];<br>
+//declered pointer variable//<br>
+printf(“Enter the five elements of array”);<br>
+for(i =0;i&lt;=4;i++)<br>
+scanf("%d",p+i);<br>
+printf(“your entered elements are”);<br>
+for(i=0;i&lt;=4;i++)<br>
+printf("%d\t",*p+i);<br>
+return 0;<br>
+}</p><p>23.Program(assign and access pointer variable)</p><p>#include&lt;stdio.h&gt;</p><p>int main()<br>
+{<br>
+int *p;<br>
+int n;<br>
+p=&amp;n;<br>
+n=100;<br>
+printf(“values of n and address of n using variable n\n”);<br>
+printf(“value of n=%d,and address of n=%u\n”,n,&amp;n);</p><p>printf(“value of n and address of n usinf pointer variable\n”);<br>
+printf(“value of n=%d,and adderss of n=%u\n”,*p,p);</p><p>return 0;<br>
+}</p><p>24.Program(enter and 1d array)</p><p>#include&lt;stdio.h&gt;</p><p>int main()<br>
+{<br>
+int array[6],i;   //array declaration<br>
+printf(“Enter the 6 elments of array :\n “);<br>
+for(i=0;i&lt;6;i++)<br>
+{<br>
+scanf(”%d”,&amp;array[i]);<br>
+}<br>
+printf("Elements of array inputted by you are:\n ");</p><p>for(i=0;i&lt;6;i++)<br>
+{<br>
+printf("%d\t",array[i]);<br>
+}<br>
+return 0;<br>
+}</p><p>25.Program(enter and print 2d array)</p><p>#include&lt;stdio.h&gt;</p><p>int main()<br>
+{<br>
+int arr[3][5],i,j;<br>
+printf(“Enter the elements of array : \n”);</p><p>for(i=0;i&lt;3;i++)<br>
+{<br>
+for(j=0;j&lt;5;j++)<br>
+scanf("%d",&amp;arr[i][j]);<br>
+}</p><p>printf(“2D array entered by you is : \n”);</p><p>for(i=0;i&lt;3;i++)<br>
+{<br>
+for (j=0;j&lt;5;j++)<br>
+printf("%d\t",arr[i][j]);<br>
+printf("\n");<br>
+}</p><p>return 0;<br>
+}</p><p>26.Program(factorial using recursion)</p><p>#include&lt;stdio.h&gt;<br>
+int fact(int n);<br>
+int fact(int n)<br>
+{<br>
+int ans;<br>
+if(n==0)<br>
+ans=1;<br>
+else<br>
+ans=n*fact(n-1);<br>
+return ans;<br>
+}</p><p>int main()<br>
+{<br>
+int n,result;<br>
+printf(“Enter the no whose factorial you want to get : “);<br>
+scanf(”%d”,&amp;n);<br>
+result=fact(n);<br>
+printf(“factorial of %d is: %d \n”,n,result);<br>
+return 0;<br>
+}</p><p>27.Program(fibonachi series using  recursion)</p><p>#include&lt;stdio.h&gt;</p><p>int fibonacchi(int n);</p><p>int main()<br>
+{<br>
+int i,n,c=0;<br>
+printf(“Enter the no of fibonacchi terms you want to print: “);<br>
+scanf(”%d”,&amp;n);<br>
+for(i=1;i&lt;+n;i++)<br>
+{<br>
+printf("%d\n",fibonacchi©);<br>
+c++;<br>
+}<br>
+return 0;<br>
+}</p><p>int fibonacchi(int n)<br>
+{<br>
+if(n<mark>0)<br>
+return 0;<br>
+if(n</mark>1)<br>
+return 1;<br>
+else<br>
+return(fibonacchi(n-1) + fibonacchi(n-2));<br>
+}</p><p>28.Program(Fizz buzz)</p><p>#include&lt;stdio.h&gt;</p><p>int main()<br>
+{<br>
+int i,n;<br>
+printf(“Enter the limit: “);<br>
+scanf(”%d”,&amp;n);<br>
+for(i=1;i&lt;=n;i++)<br>
+{<br>
+if(i%3<mark>0&amp;&amp;i%5!=0)<br>
+printf(“fizz\n”);<br>
+if(i%5</mark>0&amp;&amp;i%3!=0)<br>
+printf(“buzz\n”);<br>
+if(i%3<mark>0&amp;&amp;i%5</mark>0)<br>
+printf(“fizzbuzz\n”);<br>
+if(i%3!=0&amp;&amp;i%5!=0)<br>
+printf("%d\n",i);<br>
+}<br>
+return 0;<br>
+}</p><p>29.Program(greatest among 3)<br>
+#include&lt;header.h&gt;</p><p>int main()<br>
+{<br>
+int a,b,c;<br>
+printf(“Enter the three numbers : “);<br>
+scanf(”%d %d %d”,&amp;a,&amp;b,&amp;c);<br>
+if(a&gt;b&amp;&amp;a&gt;c)<br>
+printf("%d is the greatest\n",a);<br>
+if(b&gt;a&amp;&amp;b&gt;c)<br>
+printf("%d isthe greatest\n",b);<br>
+if(c&gt;a&amp;&amp;c&gt;b)<br>
+printf("%d is the greatest\n",c);<br>
+return 0;<br>
+}</p><p>30.Program(leap year)</p><p>#include&lt;stdio.h&gt;</p><p>int main()<br>
+{<br>
+int n;<br>
+printf(“Enter the year u want to check it for leap :”);<br>
+scanf("%d",&amp;n);<br>
+if(n%4==0)<br>
+printf(“it is a leap year\n”);<br>
+else<br>
+printf(" not a leap year\n");<br>
+return 0;<br>
+}</p><p>31.Program(matix multiplication)<br>
+#include&lt;stdio.h&gt;</p><p>int main()<br>
+{<br>
+int a[3][3],b[3][3],c[3][3],i,j;</p><p>printf(“Enter the values of matrix a : \n”);</p><p>for(i=0;i&lt;3;i++)<br>
+{<br>
+for(j=0;j&lt;3;j++)<br>
+scanf("%d",&amp;a[i][j]);<br>
+}<br>
+printf(“Enter the values of matrix b:\n “);<br>
+for(i=0;i&lt;3;i++)<br>
+{<br>
+for(j=0;j&lt;3;j++)<br>
+scanf(”%d”,&amp;b[i][j]);<br>
+}<br>
+for(i=0;i&lt;3;i++)<br>
+{<br>
+for(j=0;j&lt;3;j++)<br>
+c[i][j]=a[i][0]*b[0][j]+a[i][1]*b[1][j]+a[i][2]*b[2][j];<br>
+}<br>
+printf(“matrix a * b = \n”);<br>
+for(i=0;i&lt;3;i++)<br>
+{<br>
+for(j=0;j&lt;3;j++)<br>
+printf("%d\t",c[i][j]);<br>
+printf("\n");<br>
+}<br>
+return 0;<br>
+}</p><p>32.Program(my calculator)<br>
+#include&lt;stdio.h&gt;</p><p>int main()<br>
+{<br>
+char op;<br>
+float  num1,num2,result;<br>
+printf(“Enter [num1] [+ - * /] [num2]\n”);<br>
+scanf("%f %c %f",&amp;num1,&amp;op,&amp;num2);</p><p>switch (op)<br>
+{<br>
+case ‘+’:<br>
+result=num1+num2;<br>
+break;<br>
+case ‘-’:<br>
+result=num1-num2;<br>
+break;<br>
+case '<em>’:<br>
+result=num1</em>num2;<br>
+break;<br>
+case ‘/’:<br>
+result=num1/num2;<br>
+break;<br>
+default:<br>
+printf(“not valid operation”);<br>
+}<br>
+printf("%.2f %c %.2f= %.3f",num1,op,num2,result);<br>
+return 0;<br>
+}</p><p>33.Program(simple  interest)</p><p>#include&lt;header.h&gt;</p><p>int main()<br>
+{<br>
+float p,r,t,ans;<br>
+printf(“Enter the principle amount,rate of interest,time in year : “);<br>
+scanf(”%f %f %f”,&amp;p,&amp;r,&amp;t);<br>
+ans=(p<em>r</em>t)/100;<br>
+printf(" interest is %f\n",ans);<br>
+return 0;<br>
+}</p><p>34.Program(sting palindrome)</p><p>#include&lt;stdio.h&gt;<br>
+#include&lt;string.h&gt;<br>
+int main()<br>
+{<br>
+int temp,i,x,end,start;<br>
+char str[50],extra[50];<br>
+printf(“Enter the string you want to check palindrome or not : “);<br>
+gets(str);<br>
+//puts(str);<br>
+end=strlen(str);<br>
+printf(”%d”,end);<br>
+strcpy(str,extra);<br>
+//for(i=0;i&lt;end;i++)<br>
+//extra[i]=str[i];</p><p>//printf("%d\n",end);<br>
+puts(extra);<br>
+/<em>start=0;<br>
+while(start&lt;end)<br>
+{<br>
+temp=str[start];<br>
+str[start]=str[end];<br>
+str[end]=temp;<br>
+start++;<br>
+end–;<br>
+}<br>
+while(end&gt;=1)<br>
+{<br>
+if(str[i<br>
+printf(“string is palindrome”);<br>
+else<br>
+printf(“not palindrome”);</em>/<br>
+return 0;<br>
+}</p><p>35.Program(enter and display  structure)</p><p>#include&lt;stdio.h&gt;</p><p>struct data<br>
+{<br>
+char name[20];<br>
+char branch[10];<br>
+int roll_no;<br>
+};</p><p>int main()<br>
+{<br>
+struct data c;   //declared data type and variable<br>
+printf(“Enter your name,branch,roll no :\n”);<br>
+scanf("%s %s %d",&amp;<a href="http://c.name" target="_blank">c.name</a>,&amp;c.branch,&amp;c.roll_no);<br>
+printf(“YOUR DATA\n name : %s\nbranch : %s\nroll no : %d\n”,<a href="http://c.name" target="_blank">c.name</a>,c.branch,c.roll_no);<br>
+return 0;<br>
+}</p><p>36.Program(sunday monday)</p><p>#include&lt;stdio.h&gt;</p><p>int main()<br>
+{<br>
+int n;<br>
+printf(" Enter m for monday t for tuesday w for wednesday h for thursday f for friday s for saturday  : “);<br>
+scanf(”%c",&amp;n);<br>
+switch(n)<br>
+{<br>
+case ‘m’:printf(“monday\n”);<br>
+break;<br>
+case ‘t’:printf(“tuesday\n”);<br>
+break;<br>
+case ‘w’:printf(“wednseday\n”);<br>
+break;<br>
+case ‘h’:printf(“thursday\n”);<br>
+break;<br>
+case ‘f’:printf(“friday\n”);<br>
+break;<br>
+case ‘s’:printf(“saturday\n”);<br>
+break;<br>
+}<br>
+return 0;<br>
+}</p></div>
